@@ -203,3 +203,24 @@
     border-radius: 50%;
     justify-content: center;
   }
+
+  @media (max-width: 350px) {
+    #navbar-pinterest {
+      flex-direction: column;
+    }
+
+    .btn-header-content {
+      min-height: 18px;
+      font-size: 10px;
+      font-weight: 300;
+    }
+
+    .finder {
+      font-size: 10px;
+      height: 70%;
+    }
+
+    .link {
+      font-weight: 300;
+    }
+  }
