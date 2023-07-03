@@ -1,0 +1,205 @@
+:root {
+    --card-width: 250px;
+    --card-border-radious: 16px;
+    --row-increment: 10px;
+    --card-small: 26;
+    --card-medium: 33;
+    --card-large: 45;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+
+  .pin_container {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-width));
+    grid-auto-rows: var(--row-increment);
+    justify-content: center;
+  }
+
+  .card {
+    margin: 15px 10px;
+    padding: 0;
+    border-radius: var(--card-border-radious);
+
+    background-color: black;
+  }
+
+  .card a:hover {
+    opacity: .5;
+  }
+
+  .card-small {
+    grid-row-end: span var(--card-small);
+  }
+
+  .card-medium {
+    grid-row-end: span var(--card-medium);
+  }
+
+  .card-large {
+    grid-row-end: span var(--card-large);
+  }
+
+  section img{
+    border-radius: var(--card-border-radious);
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+
+  .logo {
+    color: #e60023;
+  }
+
+  .svg-color {
+    fill: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+  }
+
+  .logo-text-container {
+    letter-spacing: -1;
+  }
+
+  .logo-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #cc0000;
+    margin-left: 4px;
+  }
+
+  .logo-container {
+    display: flex;
+    margin-right: 0.7rem;
+    margin-left: 1rem;
+    align-items: center;
+  }
+
+  .search-input-container {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #cdcdcd;
+    border-width: 2px;
+    align-items: center;
+    height: 48px;
+  }
+  
+  .search-icon-container {
+    margin-left: 16px;
+    margin-right: 8px;
+    flex: 0 0 auto;
+  }
+
+  .search-icon {
+    color: #5f5f5f;
+  }
+
+  header {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .search-input {
+    font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #333;
+  }
+
+  .headers-buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .link {
+    font-weight: 500;
+    padding: 8px 8px;
+  }
+
+  .link a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link a:hover {
+    border-radius: 8px;
+    background-color: #e2e2e2;
+    min-height: 48px;
+  }      
+
+  .link-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 0.7rem;
+    align-items: center;
+  }
+
+  .btn-header {
+    border: 0;
+    background-color: transparent;
+  }
+
+  .btn-header-content {
+    padding: 11px 18px;
+    border-radius: 24px;
+    min-height: 48px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .headers-buttons-container button:hover {
+    opacity: 0.8;
+  }
+
+  .white {
+    background-color: #efefef;
+  }
+
+  .red {
+    background-color: #e60023;
+    color: #ffffff;
+  }
+
+  .arrow-down {
+    color: #5f5f5f;
+    fill: currentColor;
+    height: 12px;
+    width: 12px;
+  }
+
+  .x-icon-container {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+  }
